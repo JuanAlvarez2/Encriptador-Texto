@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="Logo De Alura Latam">
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info-logo-container">
+                <a class="logo-texto" href="#">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </a>
+                <h6 class="informacion">Solo letras minusculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar"  onclick="botonDesencriptar()">Desencriptar</button>
+
+            </div>
+        </section>
+        <section class="mensaje-caja">
+            <textarea class="mensaje" readonly></textarea>
+            <div class="informacion-caja">
+                <img class="mensaje-imagen" src="assets/Muñeco.png" alt="Imagen">
+                <h3 class="informacion-mensaje-1">Ningún mensaje encontrado</h2>
+                <p class="informacion-mensaje-2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <button class="boton-copiar hidden" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="texto_footer">Creado Por Juan Alvarez</p>
+        <div>
+            <a href="https://github.com/JuanAlvarez2">
+                <img class="logos" src="assets/github.png" alt="logo de github">
+            </a>
+            <a href="https://www.instagram.com/juan.alvarez_4/?igsh=MWM0MjlpZ28xa2xrOQ%3D%3D&utm_source=qr">
+                <img class="logos" src="assets/instagram.png" alt="logo de instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/juan-alvarez-33a304322">
+                <img class="logos" src="assets/linkedin.png" alt="logo de linkedin">
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
